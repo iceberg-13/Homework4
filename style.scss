@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    height: 1024px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000915 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    background-image: url(img/topback.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__content {
+        padding-top: 217px;
+    }
+
+    &__text {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        padding-top: 32px;
+        padding-bottom: 44px;
+    }
+
+    &__button {
+        width: 234px;
+        height: 48px;
+        border-radius: 30px;
+        background: #9C0332;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        box-sizing: border-box;
+    }
+
+    &__button:hover {
+        border-radius: 30px;
+        background: #EB443F;
+    }
+}
+
+.title {
+    max-width: 788px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.product-box {
+    display: flex;
+    gap: 32px;
+    background: #000915;
+    align-items: center;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.product {
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.product:hover {
+    border-radius: 16px;
+    border: 3px solid #44D2FF;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.game__link {
+    position: absolute;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    padding: 236px 268px 32px 32px;
+}
+
+@import 'mobile';
